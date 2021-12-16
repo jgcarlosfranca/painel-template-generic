@@ -11,7 +11,7 @@ export default function Topbar() {
         </div>
         <div className="topRight">
           <div className="topbarIconContainer">
-            <IoMdExit size={35} />
+            <IoMdExit className="topIconBadge" size={35} />
           </div>
         </div>
       </div>

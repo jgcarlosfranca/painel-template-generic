@@ -47,11 +47,6 @@
 }
 
 .topIconBadge {
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    top: -5px;
-    right: 0px;
     color: white;
     border-radius: 50%;
     display: flex;
@@ -61,7 +56,7 @@
 }
 
 .topIconBadge:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
     transition: all 0.25s;
     color: rgb(255, 255, 255);
 }
