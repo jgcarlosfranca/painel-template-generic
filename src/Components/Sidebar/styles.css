@@ -1,6 +1,6 @@
 .sidebar {
     flex: 1;
-    height: calc(99vh - 60px);
+    height: calc(100vh - 90px);
     background-color: rgb(208, 207, 207);
     position: sticky;
     top: 60px;
@@ -36,7 +36,8 @@
 }
 
 .sidebarListItem:hover {
-    background-color: rgb(166, 182, 247);
+    background-color: rgb(93, 192, 93);
+    color: aliceblue;
 }
 
 .sidebarIcon {
