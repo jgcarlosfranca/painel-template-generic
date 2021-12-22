@@ -1,28 +1,44 @@
 import React from "react";
-import { Radar } from "react-chartjs-2";
+import { ResponsiveRadar } from "@nivo/radar";
 
-const data = {
-  labels: ["Thing 1", "Thing 2", "Thing 3", "Thing 4", "Thing 5", "Thing 6"],
-  datasets: [
-    {
-      label: "# of Votes",
-      data: [2, 9, 3, 5, 2, 3],
-      backgroundColor: "rgba(255, 99, 132, 0.2)",
-      borderColor: "rgba(255, 99, 132, 1)",
-      borderWidth: 1,
-    },
-  ],
-};
-
-const options = {
-  scale: {
-    ticks: { beginAtZero: true },
-  },
-};
-
-const RadarChart = () => (
+const RadarChart = ({ data }) => (
   <>
-    <Radar data={data} options={options} />
+    <ResponsiveRadar
+      data={data}
+      keys={["chardonay", "carmenere", "syrah"]}
+      indexBy="taste"
+      valueFormat=">-.2f"
+      margin={{ top: 70, right: 80, bottom: 40, left: 80 }}
+      borderColor={{ from: "color" }}
+      gridLabelOffset={36}
+      dotSize={10}
+      dotColor={{ theme: "background" }}
+      dotBorderWidth={2}
+      colors={{ scheme: "nivo" }}
+      blendMode="multiply"
+      motionConfig="wobbly"
+      legends={[
+        {
+          anchor: "top-left",
+          direction: "column",
+          translateX: -50,
+          translateY: -40,
+          itemWidth: 80,
+          itemHeight: 20,
+          itemTextColor: "#999",
+          symbolSize: 12,
+          symbolShape: "circle",
+          effects: [
+            {
+              on: "hover",
+              style: {
+                itemTextColor: "#000",
+              },
+            },
+          ],
+        },
+      ]}
+    />
   </>
 );
 

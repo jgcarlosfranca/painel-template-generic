@@ -14,11 +14,28 @@
     height: 700px;
 }
 
-.DinamicChart {
+.BumpChart {
     display: flex;
     align-items: center;
     margin: 20px;
-    width: 80%;
+    width: 700px;
+    height: 700px;
+}
+
+.LineChart {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    width: 700px;
+    height: 700px;
+}
+
+.RadarChart {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    width: 700px;
+    height: 700px;
 }
 
 .home_red {

@@ -1,28 +1,29 @@
 import "./styles.css";
+
+import LineChart from "../../Components/Charts/LineChart";
+import BumpChart from "../../Components/Charts/BumpChart";
 import DoughnutChart from "../../Components/Charts/DoughnutChart";
 import RadarChart from "../../Components/Charts/RadarChart";
-import LineChart from "../../Components/Charts/LineChart";
-import ClickEvents from "../../Components/Charts/DinamicChart";
+import dataLineChart from "../../utils/ChartDatas/line";
+import dataBump from "../../utils/ChartDatas/bump";
+import dataDoughnutChart from "../../utils/ChartDatas/doughnut";
+import dataRadarChart from "../../utils/ChartDatas/radar";
 
 export default function Charts() {
   return (
     <div className="charts">
-      {/* <div className="DinamicChart">
-        <ClickEvents />
+      <div className="LineChart">
+        <LineChart data={dataLineChart} />
+      </div>
+      <div className="BumpChart">
+        <BumpChart data={dataBump} />
       </div>
       <div className="DoughnutChart">
-        <DoughnutChart />
+        <DoughnutChart data={dataDoughnutChart} />
       </div>
-      <div className="DoughnutChart">
-        <RadarChart />
-      </div> */}
-      <div className="DoughnutChart">
-        <LineChart />
+      <div className="RadarChart">
+        <RadarChart data={dataRadarChart} />
       </div>
-      {/* <div className="home_red"></div>
-      <div className="home_blue"></div>
-      <div className="home_yellow"></div>
-      <div className="home_green"></div> */}
     </div>
   );
 }
