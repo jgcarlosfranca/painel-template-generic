@@ -1,5 +1,5 @@
 import "./styles.css";
-import { AiFillHome } from "react-icons/ai";
+import { AiFillHome, AiOutlineBarChart } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
 export default function Sidebar() {
@@ -13,6 +13,12 @@ export default function Sidebar() {
               <li className="sidebarListItem active">
                 <AiFillHome className="sidebarIcon" />
                 Home
+              </li>
+            </Link>
+            <Link to="/charts" className="link">
+              <li className="sidebarListItem active">
+                <AiOutlineBarChart className="sidebarIcon" />
+                Charts
               </li>
             </Link>
           </ul>

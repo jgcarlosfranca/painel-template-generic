@@ -3,6 +3,7 @@ import Topbar from "./Components/Topbar";
 import Sidebar from "./Components/Sidebar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
+import Charts from "./Pages/Charts";
 function App() {
   return (
     <div className="App">
@@ -12,6 +13,7 @@ function App() {
           <Sidebar />
           <Routes>
             <Route element={<Home />} exact path="/" />
+            <Route element={<Charts />} exact path="/charts" />
           </Routes>
         </div>
       </Router>

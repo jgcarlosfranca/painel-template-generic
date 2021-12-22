@@ -1,0 +1,58 @@
+.charts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex: 4;
+}
+
+.DoughnutChart {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    width: 700px;
+    height: 700px;
+}
+
+.DinamicChart {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    width: 80%;
+}
+
+.home_red {
+    background-color: rgb(71, 92, 255);
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    width: 100%;
+    height: 200px;
+}
+
+.home_blue {
+    background-color: tomato;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+}
+
+.home_yellow {
+    background-color: rgb(255, 249, 71);
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    width: 200px;
+    height: auto;
+}
+
+.home_green {
+    background-color: rgb(80, 255, 71);
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    width: 200px;
+    height: auto;
+}
