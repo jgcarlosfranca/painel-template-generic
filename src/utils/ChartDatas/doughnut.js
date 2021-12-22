@@ -1,12 +1,12 @@
 const dataDoughnutChart = [{
-        "id": "go",
-        "label": "go",
+        "id": "javascript",
+        "label": "javascript",
         "value": 493,
         "color": "hsl(275, 70%, 50%)"
     },
     {
-        "id": "lisp",
-        "label": "lisp",
+        "id": "go",
+        "label": "go",
         "value": 413,
         "color": "hsl(252, 70%, 50%)"
     },
