@@ -27,6 +27,7 @@ export default function Charts() {
         <DoughnutChart data={dataDoughnutChart} />
       </div>
       <div className="RadarChart">
+        <FormHeader titulo="Radar Chart" />
         <RadarChart data={dataRadarChart} />
       </div>
     </div>
