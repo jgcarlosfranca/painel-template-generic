@@ -39,9 +39,6 @@ export function CustomSelect(props) {
         onChange={onChange}
         options={options}
       />
-      {/* <StyledSelect id={id ?? nome} name={nome} type="text" placeholder={placeholder} value={value} onChange={onChange} tamanhoInput={tamanho}>
-        {props.children}
-      </StyledSelect> */}
     </StyledFormGroup>
   );
 }
