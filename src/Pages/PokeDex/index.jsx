@@ -10,6 +10,7 @@ import "./styles.css";
 export default function Pokedex() {
   const [idPokemon, setIdPokemon] = useState('1');
   const [canShowPokemon, setCanShowPokemon] = useState(false)
+  const [pokemon, setPokemon] = useState('')
 
   const buscaDePokemon = () => {
     let config = {
@@ -20,7 +21,8 @@ export default function Pokedex() {
 
     axios(config)
       .then(function (response) {
-        console.log(JSON.stringify(response.data));
+        setCanShowPokemon(true)
+        setPokemon(response.data)
       })
       .catch(function (error) {
         console.log(error);
@@ -35,6 +37,10 @@ export default function Pokedex() {
         <TextInput titulo="indice do pokemon" placeholder="digite o numero do pokemon a ser buscado" tamanho="23%"
           onChange={(ev) => { setIdPokemon(ev.target.value.replace(/[^0-9]/g, '')) }} />
         <Button cor={'#16bf6e'} titulo="Buscar" onClick={buscaDePokemon} />
+        <div className="search" hidden={!canShowPokemon}>
+          {pokemon.name}
+          <img src={pokemon ? pokemon['sprites']['other']['official-artwork']['front_default'] : 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png'}></img>
+        </div>
       </div>
     </div>
   );
