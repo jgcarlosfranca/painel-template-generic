@@ -1,13 +1,23 @@
+:root {
+    --cor-primaria: #3f37c9;
+    --cor-secundaria: rgba(249, 46, 52, 1);
+    --cor-confirmar: #7209b7;
+    --cor-cancelar: #fca311;
+    --cor-branco: #fff;
+    --cor-texto-padrao: #333;
+    --cor-background-claro: #eee;
+    --sombra-padrao: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    --borda-padrao: 1px solid rgba(0, 0, 0, 0.263);
+    --borda-radius: 5px;
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
