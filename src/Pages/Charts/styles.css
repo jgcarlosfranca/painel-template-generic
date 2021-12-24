@@ -8,16 +8,20 @@
 
 .DoughnutChart {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
     width: 700px;
     height: 700px;
 }
 
 .BumpChart {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
     width: 700px;
     height: 700px;
 }
@@ -26,15 +30,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
     width: 700px;
     height: 700px;
 }
 
 .RadarChart {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
     width: 700px;
     height: 700px;
 }
