@@ -19,9 +19,11 @@ export default function Charts() {
         <LineChart data={dataLineChart} />
       </div>
       <div className="BumpChart">
+        <FormHeader titulo="Bump Chart" />
         <BumpChart data={dataBump} />
       </div>
       <div className="DoughnutChart">
+        <FormHeader titulo="Doughnut Chart" />
         <DoughnutChart data={dataDoughnutChart} />
       </div>
       <div className="RadarChart">
