@@ -6,32 +6,9 @@
     width: 100%;
 }
 
-.yellow {
-    margin: 10px;
-    width: 30%;
-    height: 30%;
-    background-color: yellow;
-}
-
-.green {
-    margin: 10px;
-    width: 45%;
-    height: 30%;
-    background-color: green;
-}
-
-.blue {
-    margin: 10px;
-    width: 30%;
-    height: 50%;
-    background-color: blue;
-}
-
-.red {
-    margin: 10px;
-    width: 30%;
-    height: 30%;
-    background-color: red;
+.forms__general {
+    margin: 20px;
+    width: 100%;
 }
 
 .MainChartPainel {

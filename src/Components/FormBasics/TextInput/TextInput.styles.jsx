@@ -1,41 +1,32 @@
-import React from "react";
-import PropType from "prop-types";
-import { StyledFormGroup, StyledInput, StyledLabel } from "./TextInput.styles";
+import styled from "styled-components";
 
-export function TextInput(props) {
-  const {
-    id,
-    nome,
-    titulo = "Título do campo",
-    placeholder = null,
-    value,
-    onChange,
-    tamanho,
-  } = props;
+export const StyledFormGroup = styled.div`
+  width: ${(props) =>
+    props.children[1].props.tamanhoInput
+      ? props.children[1].props.tamanhoInput
+      : "45%"};
+  display: flex;
+  flex-direction: column;
+  margin: 0.75em 0;
+`;
 
-  //
-  return (
-    <StyledFormGroup>
-      <StyledLabel htmlFor={id}>{titulo}</StyledLabel>
-      <StyledInput
-        id={id ?? nome}
-        name={nome}
-        type="text"
-        placeholder={placeholder}
-        value={value}
-        onChange={onChange}
-        tamanhoInput={tamanho}
-      />
-    </StyledFormGroup>
-  );
-}
+export const StyledLabel = styled.label`
+  font-weight: bold;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  color: var(--cor-secundaria);
+`;
 
-TextInput.propTypes = {
-  id: PropType.string,
-  nome: PropType.string,
-  titulo: PropType.string,
-  placeholder: PropType.string,
-  value: PropType.string,
-  onChange: PropType.func,
-  tamanho: PropType.string,
-};
+export const StyledInput = styled.input`
+  font-size: 1.05rem;
+  min-height: 15px;
+  padding: 0.5em;
+  border: var(--borda-padrao);
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+`;
+
+export const StyledErrorLabel = styled.label`
+  color: var(--cor-secundaria);
+`;
