@@ -2,13 +2,13 @@ import React from "react";
 import PropTypes from "prop-types";
 
 export const FormHeader = ({
-  titulo = "Um título",
-  subtitulo = "um subtítulo",
+  titulo = "",
+  subtitulo = "",
 }) => {
   return (
     <header className="header__title">
       <h2 className="header__title header__title--primary ">{titulo}</h2>
-      <span className="header__subtitle header__subtitle--secondary">
+      <span className="header__subtitle header__subtitle--secondary" hidden={!!subtitulo}>
         {subtitulo}
       </span>
     </header>

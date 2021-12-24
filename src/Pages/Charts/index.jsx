@@ -8,11 +8,14 @@ import dataLineChart from "../../utils/ChartDatas/line";
 import dataBump from "../../utils/ChartDatas/bump";
 import dataDoughnutChart from "../../utils/ChartDatas/doughnut";
 import dataRadarChart from "../../utils/ChartDatas/radar";
+import { FormHeader } from "../../Components/FormBasics/FormLayout/FormHeader"
+
 
 export default function Charts() {
   return (
     <div className="charts">
       <div className="LineChart">
+        <FormHeader titulo="Line Chart" />
         <LineChart data={dataLineChart} />
       </div>
       <div className="BumpChart">
