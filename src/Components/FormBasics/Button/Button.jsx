@@ -3,10 +3,10 @@ import React from "react";
 import { StyledButton } from "./Button.styles";
 
 export function Button(props) {
-  const { onClick, titulo = "Botão", cor } = props;
+  const { onClick, titulo = "Botão", cor, corHover } = props;
 
   return (
-    <StyledButton corBotao={cor} onClick={onClick}>
+    <StyledButton corBotao={cor} corBotaoHover={corHover} onClick={onClick}>
       {titulo}
     </StyledButton>
   );

@@ -17,6 +17,6 @@ export const StyledButton = styled.button`
   &:hover {
     transform: scale(1.1);
     transition: all 0.25s;
-    color: #000;
+    color: ${(props) => (props.corBotaoHover ? props.corBotaoHover : "#000")};
   }
 `;
