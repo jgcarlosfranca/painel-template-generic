@@ -23,6 +23,12 @@
     padding: 20px;
     width: 30px;
     height: 30px;
+    color: #e45353;
+}
+
+.form_body svg:hover {
+    transform: scale(1.15);
+    color: #fd1f1f;
 }
 
 .search {
