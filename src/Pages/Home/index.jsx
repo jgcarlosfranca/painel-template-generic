@@ -1,9 +1,9 @@
 import "./styles.css";
 
 
-export default function Home() {
+export default function Forms() {
   return (
-    <div className="home">
+    <div className="Forms">
       Hello world
     </div>
   );
