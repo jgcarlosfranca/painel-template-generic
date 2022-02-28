@@ -3,7 +3,7 @@ import "./styles.css";
 
 const ToggleSwitch = (props) => {
     return (
-        <div className="container">
+        <div className="container_switch_toogle">
             <div className="toggle-switch">
                 <input type="checkbox" className="checkboxCustom"
                     name={props.name} id={props.label} checked={props.valor} onChange={props.handleChangeCheckBox} />

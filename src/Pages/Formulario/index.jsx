@@ -3,7 +3,7 @@ import ToggleSwitch from "../../Components/SwitchToogle/switchCustom";
 import React, {useState} from "react";
 
 
-export default function Home() {
+export default function Forms() {
   const [ligado, setLigado] = useState('')
 
   return (

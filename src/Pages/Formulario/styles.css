@@ -1,14 +1,7 @@
-.home {
+.formPage {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-}
-.MainChartPainel {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  min-width: 1080px;
-  max-width: 1080px;
 }
