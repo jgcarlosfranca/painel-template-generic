@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import Charts from "./Pages/Charts";
 import PokeDex from "./Pages/PokeDex"
+import Forms from "./Pages/Formulario"
 function App() {
   return (
     <div className="App">
@@ -16,6 +17,7 @@ function App() {
             <Route element={<Home />} exact path="/" />
             <Route element={<Charts />} exact path="/charts" />
             <Route element={<PokeDex/>} exact path="/pokedex" />
+            <Route element={<Forms/>} exact path="/forms" />
           </Routes>
         </div>
       </Router>

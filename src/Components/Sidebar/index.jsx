@@ -1,6 +1,7 @@
 import "./styles.css";
 import { AiFillHome, AiOutlineBarChart, } from "react-icons/ai";
 import { MdCatchingPokemon } from "react-icons/md"
+import { FaWpforms } from "react-icons/fa"
 import { Link } from "react-router-dom";
 
 export default function Sidebar() {
@@ -26,6 +27,12 @@ export default function Sidebar() {
               <li className="sidebarListItem active">
                 <MdCatchingPokemon className="sidebarIcon" />
                 Pokedex
+              </li>
+            </Link>
+            <Link to="/forms" className="link">
+              <li className="sidebarListItem active">
+                <FaWpforms className="sidebarIcon" />
+                Forms
               </li>
             </Link>
           </ul>
