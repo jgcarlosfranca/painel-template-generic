@@ -29,6 +29,7 @@ export default function Pokedex() {
     axios(config)
       .then(function (response) {
         setCanShowPokemon(true)
+        console.log(response.data)
         setPokemon(response.data)
       })
       .catch(function (error) {
@@ -62,6 +63,15 @@ export default function Pokedex() {
             <img
               src={pokemon
                 ? pokemon['sprites']['versions']['generation-v']['black-white']['animated']['back_default']
+                : 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png'}></img>
+
+            <img
+              src={pokemon
+                ? pokemon['sprites']['versions']['generation-v']['black-white']['animated']['front_shiny']
+                : 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png'}></img>
+            <img
+              src={pokemon
+                ? pokemon['sprites']['versions']['generation-v']['black-white']['animated']['back_shiny']
                 : 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png'}></img>
 
           </div>
