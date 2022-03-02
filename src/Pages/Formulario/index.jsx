@@ -1,6 +1,6 @@
 import "./styles.css";
 import ToggleSwitch from "../../Components/SwitchToogle/switchCustom";
-import React, {useState} from "react";
+import React, { useState } from "react";
 
 
 export default function Forms() {
@@ -8,8 +8,12 @@ export default function Forms() {
 
   return (
     <div className="home">
-      Hello world
-      <ToggleSwitch name="teste_Switch_toogle" valor={ligado} label="teste" handleChangeCheckBox={() => setLigado(!ligado)}/>
+      <div className="row_form">
+        Hello world
+      </div>
+      <div className="row_form">
+        <ToggleSwitch name="teste_Switch_toogle" valor={ligado} label="teste" handleChangeCheckBox={() => setLigado(!ligado)} />
+      </div>
     </div>
   );
 }
