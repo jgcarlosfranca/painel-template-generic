@@ -13,7 +13,7 @@ export default function Forms() {
   return (
     <div className="home">
       <div className="forms__general">
-        <FormHeader titulo="Busca de Pokemons" />
+        <FormHeader titulo="Formulario Exemplo" cor='#16bf6e' />
         <Divider />
         <div className="form_body">
           <TextInput titulo="Input text" placeholder="digite um texto" tamanho="23%"
