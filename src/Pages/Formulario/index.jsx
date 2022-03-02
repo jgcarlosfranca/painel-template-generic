@@ -16,7 +16,7 @@ export default function Forms() {
         <FormHeader titulo="Formulario Exemplo" cor='#16bf6e' />
         <Divider />
         <div className="form_body">
-          <TextInput titulo="Input text" placeholder="digite um texto" tamanho="23%"
+          <TextInput titulo="Input text" placeholder="digite um texto" tamanho="30%"
             value={textInput1}
             onChange={(ev) => { setTextInput1(ev.target.value) }} />
           <ToggleSwitch name="teste_Switch_toogle" valor={ligado} label="teste" handleChangeCheckBox={() => setLigado(!ligado)} />
