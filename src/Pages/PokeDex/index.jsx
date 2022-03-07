@@ -22,7 +22,7 @@ export default function Pokedex() {
   const buscaDePokemon = () => {
     let config = {
       method: 'get',
-      url: 'https://pokeapi.co/api/v2/pokemon/' + idPokemon,
+      url: 'https://pokeapi.co/api/v2/pokemon/' + (idPokemon || '1'),
       headers: {}
     };
 
