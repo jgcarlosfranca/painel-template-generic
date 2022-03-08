@@ -63,7 +63,7 @@ export default function Pokedex() {
         </div>
         <div className="button_layout">
           <Button cor={'#16bf6e'} corHover={'#06311d'} titulo="Buscar" onClick={buscaDePokemon} />
-          <Button cor={'#16bf6e'} corHover={'#06311d'} titulo="Random Pokemon" onClick={randomPokemon} />
+          <Button cor={'#4169E1'} corHover={'#06311d'} titulo="Random Pokemon" onClick={randomPokemon} />
         </div>
 
 
