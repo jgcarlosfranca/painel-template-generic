@@ -50,6 +50,7 @@ export default function Pokedex() {
           <FaEraser onClick={limpar} />
         </div>
         <Button cor={'#16bf6e'} corHover={'#06311d'} titulo="Buscar" onClick={buscaDePokemon} />
+        <Button cor={'#16bf6e'} corHover={'#06311d'} titulo="Random Pokemon" onClick={buscaDePokemon} />
 
 
         <div className="search" hidden={!canShowPokemon}>
