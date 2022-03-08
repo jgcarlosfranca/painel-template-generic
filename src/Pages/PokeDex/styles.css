@@ -56,3 +56,10 @@
     min-width: 1080px;
     max-width: 1080px;
 }
+
+.button_layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 20%;
+}
