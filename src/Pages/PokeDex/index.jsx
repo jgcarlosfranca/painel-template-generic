@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FormHeader } from "../../Components/FormBasics/FormLayout/FormHeader";
 import { Divider } from "../../Components/FormBasics/Divider"
 import { TextInput } from "../../Components/FormBasics/TextInput"
 import { Button } from "../../Components/FormBasics/Button"
 import { FaEraser } from "react-icons/fa"
 import axios from "axios";
+
+import { randomNumberSearch } from "../../utils/Functions/randomSearch";
 
 import "./styles.css";
 
@@ -20,6 +22,7 @@ export default function Pokedex() {
   }
 
   const buscaDePokemon = () => {
+    console.log('meu id', idPokemon)
     let config = {
       method: 'get',
       url: 'https://pokeapi.co/api/v2/pokemon/' + (idPokemon || '1'),
@@ -37,6 +40,15 @@ export default function Pokedex() {
       });
   }
 
+  const randomPokemon = () => {
+    let pokeRandom = randomNumberSearch(600)
+    setIdPokemon(pokeRandom)
+  }
+
+  useEffect(() => {
+    buscaDePokemon()
+  }, [idPokemon]);
+
   return (
     <div className="home">
       <div className="forms__general">
@@ -51,7 +63,7 @@ export default function Pokedex() {
         </div>
         <div className="button_layout">
           <Button cor={'#16bf6e'} corHover={'#06311d'} titulo="Buscar" onClick={buscaDePokemon} />
-          <Button cor={'#16bf6e'} corHover={'#06311d'} titulo="Random Pokemon" onClick={buscaDePokemon} />
+          <Button cor={'#16bf6e'} corHover={'#06311d'} titulo="Random Pokemon" onClick={randomPokemon} />
         </div>
 
 
