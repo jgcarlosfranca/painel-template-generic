@@ -1,14 +1,24 @@
 .home {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
 }
+
 .MainChartPainel {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  min-width: 1080px;
-  max-width: 1080px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-width: 1080px;
+    max-width: 1080px;
+}
+
+.conteiner_glass_effect {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 50%;
+    background-color: #fd1f1f;
 }
