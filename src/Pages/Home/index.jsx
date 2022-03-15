@@ -7,6 +7,9 @@ export default function Forms() {
       <div className="conteiner_glass_effect">
 
       </div>
+      <div className="conteiner_ghost_white">
+
+      </div>
       <div className="animated_digitation">
         Hello world
       </div>
