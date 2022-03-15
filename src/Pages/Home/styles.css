@@ -26,7 +26,6 @@
 .conteiner_ghost_white {
     width: 100%;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     height: 30%;
@@ -34,14 +33,10 @@
 }
 
 .animated_digitation {
-    width: 100%;
+    width: 22ch;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 30%;
     background-color: ghostwhite;
-    animation: typing 5s steps(40) infinite, blink .5s step-end infinite alternate;
+    animation: typing 7s steps(50) infinite, blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
