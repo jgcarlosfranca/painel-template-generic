@@ -21,6 +21,10 @@ export default function Pokedex() {
     setPokemon('')
   }
 
+  const setTimer = () =>{
+    setInterval(()=>{randomPokemon}, 1000)
+  }
+
   const buscaDePokemon = () => {
     console.log('meu id', idPokemon)
     let config = {
@@ -64,6 +68,7 @@ export default function Pokedex() {
         <div className="button_layout">
           <Button cor={'#16bf6e'} corHover={'#06311d'} titulo="Buscar" onClick={buscaDePokemon} />
           <Button cor={'#4169E1'} corHover={'#06311d'} titulo="Random Pokemon" onClick={randomPokemon} />
+          <Button cor={'#4169E1'} corHover={'#06311d'} titulo="Timer Pokemon" onClick={randomPokemon} />
         </div>
 
 
