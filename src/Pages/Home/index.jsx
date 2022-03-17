@@ -9,7 +9,7 @@ export default function Forms() {
       </div>
       <div className="conteiner_ghost_white">
         <div className="animated_digitation">
-          JG dev Portifolio Welcome!!!!
+          JG dev Portifolio Welcome   !!!!
         </div>
       </div>
       <div className="conteiner_glass_effect">
