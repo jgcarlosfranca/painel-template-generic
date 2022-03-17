@@ -21,8 +21,11 @@ export default function Pokedex() {
     setPokemon('')
   }
 
-  const setTimer = () =>{
-    setInterval(()=>{randomPokemon}, 1000)
+  const setTimer = () => {
+    setInterval(() => {
+      console.log('setInterval')
+      randomPokemon()
+    }, 1000)
   }
 
   const buscaDePokemon = () => {
