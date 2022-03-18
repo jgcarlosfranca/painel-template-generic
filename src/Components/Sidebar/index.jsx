@@ -1,6 +1,6 @@
 import "./styles.css";
 import { AiFillHome, AiOutlineBarChart, } from "react-icons/ai";
-import { MdCatchingPokemon } from "react-icons/md"
+import { MdCatchingPokemon, MdWaves } from "react-icons/md"
 import { FaWpforms } from "react-icons/fa"
 import { Link } from "react-router-dom";
 
@@ -37,7 +37,7 @@ export default function Sidebar() {
             </Link>
             <Link to="/waves" className="link">
               <li className="sidebarListItem active">
-                <FaWpforms className="sidebarIcon" />
+                <MdWaves className="sidebarIcon" />
                 Waves
               </li>
             </Link>
