@@ -35,6 +35,12 @@ export default function Sidebar() {
                 Forms
               </li>
             </Link>
+            <Link to="/waves" className="link">
+              <li className="sidebarListItem active">
+                <FaWpforms className="sidebarIcon" />
+                Waves
+              </li>
+            </Link>
           </ul>
 
           {/* <Link to="/charts" className="link">
