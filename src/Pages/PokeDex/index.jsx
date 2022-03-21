@@ -78,7 +78,7 @@ export default function Pokedex() {
 
         <div className="search" hidden={!canShowPokemon}>
 
-          <div className="pokeCard">
+          <PokeCard>
             <div className="name_pokemon">{pokemon.name}</div>
           
             <div className="search_img" hidden={!canShowPokemon}>
@@ -103,7 +103,7 @@ export default function Pokedex() {
             </div>
 
 
-          </div>
+          </PokeCard>
 
         </div>
       </div>
