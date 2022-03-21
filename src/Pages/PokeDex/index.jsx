@@ -25,13 +25,11 @@ export default function Pokedex() {
 
   const setTimer = () => {
     setInterval(() => {
-      console.log('setInterval')
       randomPokemon()
     }, 1000)
   }
 
   const buscaDePokemon = () => {
-    console.log('meu id', idPokemon)
     let config = {
       method: 'get',
       url: 'https://pokeapi.co/api/v2/pokemon/' + (idPokemon || '1'),
@@ -41,8 +39,8 @@ export default function Pokedex() {
     axios(config)
       .then(function (response) {
         setCanShowPokemon(true)
-        console.log(response.data)
         setPokemon(response.data)
+        console.log(response.data)
       })
       .catch(function (error) {
         console.log(error);
@@ -80,12 +78,9 @@ export default function Pokedex() {
         <div className="search" hidden={!canShowPokemon}>
 
           <PokeCard>
-            <PokeName name={pokemon.name}>
+            <PokeName name={pokemon ? pokemon.name : 'no data'} typePokemon={pokemon ? pokemon.types[0].type.name : 'grass'}>
 
             </PokeName>
-
-            <div className="name_pokemon">{pokemon.name}</div>
-          
             <div className="search_img" hidden={!canShowPokemon}>
               <img src={pokemon ? pokemon['sprites']['other']['official-artwork']['front_default'] : 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png'}></img>
               <img

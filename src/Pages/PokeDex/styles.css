@@ -56,13 +56,6 @@
     width: 20%;
 }
 
-.name_pokemon {
-    height: 10px;
-    margin: 20px;
-    font-size: 25px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
 .search_img {
     flex-direction: row;
     padding-left: 20px;
