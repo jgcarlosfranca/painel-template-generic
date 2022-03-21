@@ -41,10 +41,6 @@
     -moz-border-radius: 15px;
 }
 
-.search img {
-    width: 10%;
-}
-
 .MainChartPainel {
     display: flex;
     align-items: center;
@@ -74,10 +70,15 @@
 .name_pokemon {
     height: 10px;
     margin: 20px;
-    font-size: 10px;
+    font-size: 25px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .search_img {
     flex-direction: row;
+    padding-left: 20px;
+}
+
+.search img {
+    width: 10%;
 }
