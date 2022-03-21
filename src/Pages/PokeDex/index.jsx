@@ -3,7 +3,8 @@ import { FormHeader } from "../../Components/FormBasics/FormLayout/FormHeader";
 import { Divider } from "../../Components/FormBasics/Divider"
 import { TextInput } from "../../Components/FormBasics/TextInput"
 import { Button } from "../../Components/FormBasics/Button"
-import { PokeCard } from "../../Components/FormBasics/PokeCard";
+import { PokeCard } from "../../Components/PokeComponents/PokeCard";
+import { PokeName } from "../../Components/PokeComponents/Pokename";
 import { FaEraser } from "react-icons/fa"
 import axios from "axios";
 
@@ -79,6 +80,10 @@ export default function Pokedex() {
         <div className="search" hidden={!canShowPokemon}>
 
           <PokeCard>
+            <PokeName name={pokemon.name}>
+
+            </PokeName>
+
             <div className="name_pokemon">{pokemon.name}</div>
           
             <div className="search_img" hidden={!canShowPokemon}>
