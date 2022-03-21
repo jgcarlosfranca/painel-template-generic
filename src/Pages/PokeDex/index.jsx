@@ -77,6 +77,10 @@ export default function Pokedex() {
 
         <div className="search" hidden={!canShowPokemon}>
           {pokemon.name}
+          <div className="pokeCard">
+            
+
+          </div>
           <div className="search_img" hidden={!canShowPokemon}>
             <img src={pokemon ? pokemon['sprites']['other']['official-artwork']['front_default'] : 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png'}></img>
             <img
