@@ -3,6 +3,7 @@ import { FormHeader } from "../../Components/FormBasics/FormLayout/FormHeader";
 import { Divider } from "../../Components/FormBasics/Divider"
 import { TextInput } from "../../Components/FormBasics/TextInput"
 import { Button } from "../../Components/FormBasics/Button"
+import { PokeCard } from "../../Components/FormBasics/PokeCard";
 import { FaEraser } from "react-icons/fa"
 import axios from "axios";
 

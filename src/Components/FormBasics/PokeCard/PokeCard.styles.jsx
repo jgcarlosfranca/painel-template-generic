@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledHr = styled.div`
+export const StyledPokeCard = styled.div`
 display: flex;
 flex-direction: column;
 height: 50vh;
