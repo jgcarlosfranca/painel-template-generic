@@ -5,6 +5,7 @@ import { TextInput } from "../../Components/FormBasics/TextInput"
 import { Button } from "../../Components/FormBasics/Button"
 import { PokeCard } from "../../Components/PokeComponents/PokeCard";
 import { PokeName } from "../../Components/PokeComponents/Pokename";
+import { PokeAnimated } from "../../Components/PokeComponents/PokeAnimated/PokeAnimated";
 import { FaEraser } from "react-icons/fa"
 import axios from "axios";
 
@@ -81,8 +82,11 @@ export default function Pokedex() {
             <PokeName name={pokemon ? pokemon.name : 'no data'}
               typePokemon={pokemon ? pokemon.types[0].type.name : 'grass'}>
             </PokeName>
-            <div className="search_img" hidden={!canShowPokemon}>
-              <img src={pokemon ? pokemon['sprites']['other']['official-artwork']['front_default'] : 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png'}></img>
+            <PokeAnimated>
+              <img src={pokemon ? pokemon['sprites']['other']['official-artwork']['front_default']
+                : 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png'}>
+
+              </img>
               <img
                 src={pokemon
                   ? pokemon['sprites']['versions']['generation-v']['black-white']['animated']['front_default']
@@ -100,9 +104,7 @@ export default function Pokedex() {
                 src={pokemon
                   ? pokemon['sprites']['versions']['generation-v']['black-white']['animated']['back_shiny']
                   : 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png'}></img>
-            </div>
-
-
+            </PokeAnimated>
           </PokeCard>
 
         </div>
