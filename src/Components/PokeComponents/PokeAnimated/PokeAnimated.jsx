@@ -1,5 +1,5 @@
 import React from "react";
-import { StyledPokeCard } from "./PokeCard.styles";
+import { StyledPokeAnimated } from "./PokeAnimated.styles";
 
 export const PokeAnimated = (props) => {
   return <StyledPokeAnimated>
