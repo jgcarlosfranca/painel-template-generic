@@ -1,1 +1,1 @@
-export * from "./PokeCard";
+export * from "./PokeSkillCard";
