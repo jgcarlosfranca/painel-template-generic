@@ -6,6 +6,7 @@ import { Button } from "../../Components/FormBasics/Button"
 import { PokeCard } from "../../Components/PokeComponents/PokeCard";
 import { PokeName } from "../../Components/PokeComponents/Pokename";
 import { PokeAnimated } from "../../Components/PokeComponents/PokeAnimated/PokeAnimated";
+import { PokeSkillCard } from "../../Components/PokeComponents/PokeSkillCard";
 import { FaEraser } from "react-icons/fa"
 import axios from "axios";
 
@@ -105,6 +106,9 @@ export default function Pokedex() {
                   ? pokemon['sprites']['versions']['generation-v']['black-white']['animated']['back_shiny']
                   : 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png'}></img>
             </PokeAnimated>
+            <PokeSkillCard>
+              hello
+            </PokeSkillCard>
           </PokeCard>
 
         </div>

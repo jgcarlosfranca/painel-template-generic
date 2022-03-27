@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const StyledPokeCard = styled.div`
 display: flex;
 flex-direction: column;
+flex-wrap: wrap;
 height: 50vh;
 margin: 1em;
 box-shadow: 0 0 1em rgb(0, 0, 0);
