@@ -105,10 +105,10 @@ export default function Pokedex() {
                 src={pokemon
                   ? pokemon['sprites']['versions']['generation-v']['black-white']['animated']['back_shiny']
                   : 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png'}></img>
+              <PokeSkillCard>
+                hello
+              </PokeSkillCard>
             </PokeAnimated>
-            <PokeSkillCard>
-              hello
-            </PokeSkillCard>
           </PokeCard>
 
         </div>
