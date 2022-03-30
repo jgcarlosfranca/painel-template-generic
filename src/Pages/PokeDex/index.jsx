@@ -110,8 +110,8 @@ export default function Pokedex() {
                 {pokemon ? pokemon.stats[1].stat.name + ':  ' + pokemon.stats[1].base_stat : ''}
                 {pokemon ? pokemon.stats[2].stat.name + ':  ' + pokemon.stats[2].base_stat : ''}
                 {pokemon ? pokemon.stats[3].stat.name + ':  ' + pokemon.stats[3].base_stat : ''}
-                {pokemon ? pokemon.stats[1].stat.name + ':  ' + pokemon.stats[1].base_stat : ''}
-                {pokemon ? pokemon.stats[1].stat.name + ':  ' + pokemon.stats[1].base_stat : ''}
+                {pokemon ? pokemon.stats[4].stat.name + ':  ' + pokemon.stats[4].base_stat : ''}
+                {pokemon ? pokemon.stats[5].stat.name + ':  ' + pokemon.stats[5].base_stat : ''}
               </PokeSkillCard>
             </PokeAnimated>
           </PokeCard>
