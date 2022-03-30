@@ -106,7 +106,8 @@ export default function Pokedex() {
                   ? pokemon['sprites']['versions']['generation-v']['black-white']['animated']['back_shiny']
                   : 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png'}></img>
               <PokeSkillCard>
-                hello
+                {pokemon ? pokemon.stats[0].stat.name + ':  ' + pokemon.stats[0].base_stat : ''}
+                {pokemon ? pokemon.stats[1].stat.name + ':  ' + pokemon.stats[1].base_stat : ''}
               </PokeSkillCard>
             </PokeAnimated>
           </PokeCard>
