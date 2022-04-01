@@ -84,64 +84,63 @@ export default function Pokedex() {
               typePokemon={pokemon ? pokemon.types[0].type.name : 'grass'}>
             </PokeName>
             <PokeAnimated>
-              <div className="image-fixing-temporary">
-                <img src={pokemon ? pokemon['sprites']['other']['official-artwork']['front_default']
-                  : 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png'}>
 
-                </img>
-                <img
-                  src={pokemon
-                    ? pokemon['sprites']['versions']['generation-v']['black-white']['animated']['front_default']
-                    : 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png'}></img>
-                <img
-                  src={pokemon
-                    ? pokemon['sprites']['versions']['generation-v']['black-white']['animated']['back_default']
-                    : 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png'}></img>
+              <img src={pokemon ? pokemon['sprites']['other']['official-artwork']['front_default']
+                : 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png'}>
 
-                <img
-                  src={pokemon
-                    ? pokemon['sprites']['versions']['generation-v']['black-white']['animated']['front_shiny']
-                    : 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png'}></img>
-                <img
-                  src={pokemon
-                    ? pokemon['sprites']['versions']['generation-v']['black-white']['animated']['back_shiny']
-                    : 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png'}></img>
-              </div>
+              </img>
+              <img
+                src={pokemon
+                  ? pokemon['sprites']['versions']['generation-v']['black-white']['animated']['front_default']
+                  : 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png'}></img>
+              <img
+                src={pokemon
+                  ? pokemon['sprites']['versions']['generation-v']['black-white']['animated']['back_default']
+                  : 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png'}></img>
+
+              <img
+                src={pokemon
+                  ? pokemon['sprites']['versions']['generation-v']['black-white']['animated']['front_shiny']
+                  : 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png'}></img>
+              <img
+                src={pokemon
+                  ? pokemon['sprites']['versions']['generation-v']['black-white']['animated']['back_shiny']
+                  : 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png'}></img>
               <PokeSkillCard>
                 <div>
                   {pokemon ? pokemon.stats[0].stat.name + ':  ' + pokemon.stats[0].base_stat : ''}
                   <div className="endless_bar">
-                    <progress value={pokemon.stats[0].base_stat} max="250"></progress>
+                    <progress value={pokemon ? pokemon.stats[0].base_stat : '0'} max="250"></progress>
                   </div>
                 </div>
                 <div>
                   {pokemon ? pokemon.stats[1].stat.name + ':  ' + pokemon.stats[1].base_stat : ''}
                   <div className="endless_bar">
-                    <progress value={pokemon.stats[1].base_stat} max="250"></progress>
+                    <progress value={pokemon ? pokemon.stats[1].base_stat : '0'} max="250"></progress>
                   </div>
                 </div>
                 <div>
                   {pokemon ? pokemon.stats[2].stat.name + ':  ' + pokemon.stats[2].base_stat : ''}
                   <div className="endless_bar">
-                    <progress value={pokemon.stats[2].base_stat} max="250"></progress>
+                    <progress value={pokemon ? pokemon.stats[2].base_stat : '0'} max="250"></progress>
                   </div>
                 </div>
                 <div>
                   {pokemon ? pokemon.stats[3].stat.name + ':  ' + pokemon.stats[3].base_stat : ''}
                   <div className="endless_bar">
-                    <progress value={pokemon.stats[3].base_stat} max="250"></progress>
+                    <progress value={pokemon ? pokemon.stats[3].base_stat : '0'} max="250"></progress>
                   </div>
                 </div>
                 <div>
                   {pokemon ? pokemon.stats[4].stat.name + ':  ' + pokemon.stats[4].base_stat : ''}
                   <div className="endless_bar">
-                    <progress value={pokemon.stats[4].base_stat} max="250"></progress>
+                    <progress value={pokemon ? pokemon.stats[4].base_stat : '0'} max="250"></progress>
                   </div>
                 </div>
                 <div>
                   {pokemon ? pokemon.stats[5].stat.name + ':  ' + pokemon.stats[5].base_stat : ''}
                   <div className="endless_bar">
-                    <progress value={pokemon.stats[5].base_stat} max="250"></progress>
+                    <progress value={pokemon ? pokemon.stats[5].base_stat : '0'} max="250"></progress>
                   </div>
                 </div>
               </PokeSkillCard>

@@ -70,3 +70,8 @@
     flex-direction: column;
     justify-content: flex-end;
 }
+
+.image-fixing-temporary {
+    display: flex;
+    height: 200px;
+}
