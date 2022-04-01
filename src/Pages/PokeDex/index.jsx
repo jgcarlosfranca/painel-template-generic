@@ -106,12 +106,24 @@ export default function Pokedex() {
                   ? pokemon['sprites']['versions']['generation-v']['black-white']['animated']['back_shiny']
                   : 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png'}></img>
               <PokeSkillCard>
-                {pokemon ? pokemon.stats[0].stat.name + ':  ' + pokemon.stats[0].base_stat : ''}
-                {pokemon ? pokemon.stats[1].stat.name + ':  ' + pokemon.stats[1].base_stat : ''}
-                {pokemon ? pokemon.stats[2].stat.name + ':  ' + pokemon.stats[2].base_stat : ''}
-                {pokemon ? pokemon.stats[3].stat.name + ':  ' + pokemon.stats[3].base_stat : ''}
-                {pokemon ? pokemon.stats[4].stat.name + ':  ' + pokemon.stats[4].base_stat : ''}
-                {pokemon ? pokemon.stats[5].stat.name + ':  ' + pokemon.stats[5].base_stat : ''}
+                <div>
+                  {pokemon ? pokemon.stats[0].stat.name + ':  ' + pokemon.stats[0].base_stat : ''}
+                </div>
+                <div>
+                  {pokemon ? pokemon.stats[1].stat.name + ':  ' + pokemon.stats[1].base_stat : ''}
+                </div>
+                <div>
+                  {pokemon ? pokemon.stats[2].stat.name + ':  ' + pokemon.stats[2].base_stat : ''}
+                </div>
+                <div>
+                  {pokemon ? pokemon.stats[3].stat.name + ':  ' + pokemon.stats[3].base_stat : ''}
+                </div>
+                <div>
+                  {pokemon ? pokemon.stats[4].stat.name + ':  ' + pokemon.stats[4].base_stat : ''}
+                </div>
+                <div>
+                  {pokemon ? pokemon.stats[5].stat.name + ':  ' + pokemon.stats[5].base_stat : ''}
+                </div>
               </PokeSkillCard>
             </PokeAnimated>
           </PokeCard>
