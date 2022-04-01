@@ -64,3 +64,9 @@
 .search img {
     width: 10%;
 }
+
+.endless_bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
