@@ -108,21 +108,29 @@ export default function Pokedex() {
               <PokeSkillCard>
                 <div>
                   {pokemon ? pokemon.stats[0].stat.name + ':  ' + pokemon.stats[0].base_stat : ''}
+                  <div className="endless_bar">
+                    <progress value={pokemon.stats[0].base_stat} max="250"></progress>
+                  </div>
                 </div>
                 <div>
                   {pokemon ? pokemon.stats[1].stat.name + ':  ' + pokemon.stats[1].base_stat : ''}
+                  <progress value={pokemon.stats[1].base_stat} max="250"></progress>
                 </div>
                 <div>
                   {pokemon ? pokemon.stats[2].stat.name + ':  ' + pokemon.stats[2].base_stat : ''}
+                  <progress value={pokemon.stats[2].base_stat} max="250"></progress>
                 </div>
                 <div>
                   {pokemon ? pokemon.stats[3].stat.name + ':  ' + pokemon.stats[3].base_stat : ''}
+                  <progress value={pokemon.stats[3].base_stat} max="250"></progress>
                 </div>
                 <div>
                   {pokemon ? pokemon.stats[4].stat.name + ':  ' + pokemon.stats[4].base_stat : ''}
+                  <progress value={pokemon.stats[4].base_stat} max="250"></progress>
                 </div>
                 <div>
                   {pokemon ? pokemon.stats[5].stat.name + ':  ' + pokemon.stats[5].base_stat : ''}
+                  <progress value={pokemon.stats[5].base_stat} max="250"></progress>
                 </div>
               </PokeSkillCard>
             </PokeAnimated>
