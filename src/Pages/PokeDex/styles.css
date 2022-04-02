@@ -73,5 +73,10 @@
 
 .image-fixing-temporary {
     display: flex;
-    height: 200px;
+    flex-direction: row;
+    width: 70%;
+    height: 150px;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
 }
