@@ -80,3 +80,24 @@
     align-items: center;
     justify-content: space-around;
 }
+
+
+/* For Firefox */
+
+progress::-moz-progress-bar {
+    background: green;
+}
+
+
+/* For Chrome or Safari */
+
+progress::-webkit-progress-value {
+    background: green;
+}
+
+
+/* For IE10 */
+
+progress {
+    background: green;
+}
