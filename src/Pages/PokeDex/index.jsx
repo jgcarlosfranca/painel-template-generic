@@ -77,6 +77,9 @@ export default function Pokedex() {
           <TextInput titulo="indice do pokemon" placeholder="digite o numero do pokemon a ser buscado" tamanho="23%"
             value={idPokemon}
             onChange={(ev) => { setIdPokemon(ev.target.value.replace(/[^0-9]/g, '')) }} />
+          
+          <FaChevronUp onClick={getUp} />
+          <FaChevronDown onClick={getDown} />
 
           <FaEraser onClick={limpar} />
         </div>
