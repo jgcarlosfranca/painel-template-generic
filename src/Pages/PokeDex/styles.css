@@ -19,16 +19,29 @@
     justify-content: flex-start;
 }
 
-.form_body svg {
+.form_body .limpar svg {
     padding: 20px;
     width: 30px;
     height: 30px;
     color: #e45353;
 }
 
-.form_body svg:hover {
+.form_body .limpar svg:hover {
     transform: scale(1.15);
     color: #fd1f1f;
+}
+
+.form_body .arrow svg {
+    display: flex;
+    padding: 20px;
+    width: 30px;
+    height: 30px;
+    color: #5563e4;
+}
+
+.form_body .arrow svg:hover {
+    transform: scale(1.15);
+    color: #1b32fc;
 }
 
 .search {
