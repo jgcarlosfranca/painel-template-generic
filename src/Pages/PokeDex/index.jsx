@@ -7,7 +7,7 @@ import { PokeCard } from "../../Components/PokeComponents/PokeCard";
 import { PokeName } from "../../Components/PokeComponents/Pokename";
 import { PokeAnimated } from "../../Components/PokeComponents/PokeAnimated/PokeAnimated";
 import { PokeSkillCard } from "../../Components/PokeComponents/PokeSkillCard";
-import { FaEraser } from "react-icons/fa"
+import { FaEraser, FaChevronDown, FaChevronUp } from "react-icons/fa"
 import axios from "axios";
 
 import { randomNumberSearch } from "../../utils/Functions/randomSearch";
@@ -23,6 +23,16 @@ export default function Pokedex() {
     setCanShowPokemon(false)
     setIdPokemon('')
     setPokemon('')
+  }
+
+  const getUp = () => {
+    let idPokemonUp = idPokemon;
+    setIdPokemon(idPokemonUp + 1)
+  }
+
+  const getDown = () => {
+    let idPokemonUp = idPokemon;
+    setIdPokemon(idPokemonUp - 1)
   }
 
   const setTimer = () => {
