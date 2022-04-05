@@ -27,12 +27,14 @@ export default function Pokedex() {
 
   const getUp = () => {
     let idPokemonUp = idPokemon;
-    setIdPokemon(idPokemonUp + 1)
+    idPokemonUp++
+    setIdPokemon(idPokemonUp)
   }
 
   const getDown = () => {
-    let idPokemonUp = idPokemon;
-    setIdPokemon(idPokemonUp - 1)
+    let idPokemonDown = idPokemon;
+    idPokemonDown--
+    setIdPokemon(idPokemonDown)
   }
 
   const setTimer = () => {
@@ -77,11 +79,14 @@ export default function Pokedex() {
           <TextInput titulo="indice do pokemon" placeholder="digite o numero do pokemon a ser buscado" tamanho="23%"
             value={idPokemon}
             onChange={(ev) => { setIdPokemon(ev.target.value.replace(/[^0-9]/g, '')) }} />
-          
-          <FaChevronUp onClick={getUp} />
-          <FaChevronDown onClick={getDown} />
+          <div className="arrow">
+            <FaChevronUp onClick={getUp} />
+            <FaChevronDown onClick={getDown} />
+          </div>
+          <div className="limpar">
+            <FaEraser onClick={limpar} />
+          </div>
 
-          <FaEraser onClick={limpar} />
         </div>
         <div className="button_layout">
           <Button cor={'#16bf6e'} corHover={'#06311d'} titulo="Buscar" onClick={buscaDePokemon} />
