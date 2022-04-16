@@ -8,6 +8,7 @@ export const StyledFormGroup = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0.75em 0;
+  padding: 0 20px 0 20px;
 `;
 
 export const StyledLabel = styled.label`
