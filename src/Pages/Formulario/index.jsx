@@ -4,6 +4,7 @@ import { FormHeader } from "../../Components/FormBasics/FormLayout/FormHeader";
 import { Divider } from "../../Components/FormBasics/Divider"
 import { TextInput } from "../../Components/FormBasics/TextInput"
 import { Button } from "../../Components/FormBasics/Button"
+import { CustomSelect } from "../../Components/FormBasics/Select";
 import "./styles.css";
 
 export default function Forms() {
@@ -19,6 +20,7 @@ export default function Forms() {
           <TextInput titulo="Input text" placeholder="digite um texto" tamanho="30%"
             value={textInput1}
             onChange={(ev) => { setTextInput1(ev.target.value) }} />
+          <CustomSelect />
           <ToggleSwitch name="teste_Switch_toogle" valor={ligado} label="teste" handleChangeCheckBox={() => setLigado(!ligado)} />
 
         </div>
