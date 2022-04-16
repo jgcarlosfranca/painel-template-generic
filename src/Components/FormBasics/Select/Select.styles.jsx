@@ -24,6 +24,7 @@ export const StyledFormGroup = styled.div`
   width: ${(props) => (props.tamanhoInput ? props.tamanhoInput : "45%")}; 
   display: flex;
   flex-direction: column;
+  padding: 0 20px 0 20px;
   margin: 0.75em 0;
 `;
 
