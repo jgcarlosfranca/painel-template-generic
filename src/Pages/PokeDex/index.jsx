@@ -3,6 +3,7 @@ import { FormHeader } from "../../Components/FormBasics/FormLayout/FormHeader";
 import { Divider } from "../../Components/FormBasics/Divider"
 import { TextInput } from "../../Components/FormBasics/TextInput"
 import { Button } from "../../Components/FormBasics/Button"
+import { FormBodyRow } from "../../Components/FormBasics/FormBodyRow/BodyRow";
 import { PokeCard } from "../../Components/PokeComponents/PokeCard";
 import { PokeName } from "../../Components/PokeComponents/Pokename";
 import { PokeAnimated } from "../../Components/PokeComponents/PokeAnimated/PokeAnimated";
@@ -76,17 +77,18 @@ export default function Pokedex() {
         <FormHeader titulo="Busca de Pokemons" />
         <Divider />
         <div className="form_body">
-          <TextInput titulo="indice do pokemon" placeholder="digite o numero do pokemon a ser buscado" tamanho="23%"
-            value={idPokemon}
-            onChange={(ev) => { setIdPokemon(ev.target.value.replace(/[^0-9]/g, '')) }} />
-          <div className="arrow">
-            <FaChevronUp onClick={getUp} />
-            <FaChevronDown onClick={getDown} />
-          </div>
-          <div className="limpar">
-            <FaEraser onClick={limpar} />
-          </div>
-
+          <FormBodyRow>
+            <TextInput titulo="indice do pokemon" placeholder="digite o numero do pokemon a ser buscado" tamanho="23%"
+              value={idPokemon}
+              onChange={(ev) => { setIdPokemon(ev.target.value.replace(/[^0-9]/g, '')) }} />
+            <div className="arrow">
+              <FaChevronUp onClick={getUp} />
+              <FaChevronDown onClick={getDown} />
+            </div>
+            <div className="limpar">
+              <FaEraser onClick={limpar} />
+            </div>
+          </FormBodyRow>
         </div>
         <div className="button_layout">
           <Button cor={'#16bf6e'} corHover={'#06311d'} titulo="Buscar" onClick={buscaDePokemon} />
