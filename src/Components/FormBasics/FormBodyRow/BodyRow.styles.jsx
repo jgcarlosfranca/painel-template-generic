@@ -5,6 +5,6 @@ export const StyledFormBodyRow = styled.div`
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     width: 100%;
 `;
