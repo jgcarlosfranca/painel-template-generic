@@ -2,6 +2,7 @@ import "./styles.css";
 import { AiFillHome, AiOutlineBarChart, } from "react-icons/ai";
 import { MdCatchingPokemon, MdWaves } from "react-icons/md"
 import { FaWpforms } from "react-icons/fa"
+import { BsFillGrid1X2Fill } from "react-icons/bs"
 import { Link } from "react-router-dom";
 
 export default function Sidebar() {
@@ -39,6 +40,12 @@ export default function Sidebar() {
               <li className="sidebarListItem active">
                 <MdWaves className="sidebarIcon" />
                 Waves
+              </li>
+            </Link>
+            <Link to="/gridFlex" className="link">
+              <li className="sidebarListItem active">
+                <BsFillGrid1X2Fill className="sidebarIcon" />
+                Grid & Flex
               </li>
             </Link>
           </ul>
