@@ -1,7 +1,35 @@
-.home {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+.conteinerGrid {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 20vh 50vh 20vh;
     width: 100%;
+    max-height: 90vh;
+}
+
+.color1 {
+    background-color: blue;
+    height: 100%;
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.color2 {
+    background-color: green;
+    height: 100%;
+    width: 100%;
+}
+
+.color3 {
+    background-color: red;
+    height: 100%;
+    width: 100%;
+}
+
+.color4 {
+    background-color: yellow;
+    height: 100%;
+    width: 100%;
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
