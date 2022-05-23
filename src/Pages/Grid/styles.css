@@ -1,7 +1,7 @@
 .conteinerGrid {
     display: grid;
-    grid-template-columns: 3fr 1fr 2fr;
-    grid-template-rows: 20vh 10vh 20vh;
+    grid-template-columns: 3fr 1fr 2fr 2fr;
+    grid-template-rows: 20vh 10vh 20vh 5vh;
     width: 100%;
     max-height: 90vh;
 }
@@ -11,7 +11,7 @@
     height: 100%;
     width: 100%;
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 5;
 }
 
 .color2 {
@@ -42,6 +42,18 @@
 
 .color6 {
     background-color: rgb(255, 136, 0);
+    height: 40vh;
+    width: 100%;
+}
+
+.color7 {
+    background-color: rgb(0, 255, 229);
+    height: 100%;
+    width: 100%;
+}
+
+.color8 {
+    background-color: rgb(98, 0, 255);
     height: 100%;
     width: 100%;
 }
