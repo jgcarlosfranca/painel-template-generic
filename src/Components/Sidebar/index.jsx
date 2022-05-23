@@ -42,10 +42,10 @@ export default function Sidebar() {
                 Waves
               </li>
             </Link>
-            <Link to="/gridFlex" className="link">
+            <Link to="/grid" className="link">
               <li className="sidebarListItem active">
                 <BsFillGrid1X2Fill className="sidebarIcon" />
-                Grid & Flex
+                Grid
               </li>
             </Link>
           </ul>
