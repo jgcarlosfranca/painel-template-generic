@@ -12,6 +12,10 @@ export default function GridFlex() {
       </div>
       <div className="color4">
       </div>
+      <div className="color5">
+      </div>
+      <div className="color6">
+      </div>
       
     </div>
   );
