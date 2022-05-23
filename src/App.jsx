@@ -21,7 +21,7 @@ function App() {
             <Route element={<PokeDex/>} exact path="/pokedex" />
             <Route element={<Forms/>} exact path="/forms" />
             <Route element={<AnimatedWaves/>} exact path="/waves" />
-            <Route element={<GridFlex/>} exact path="/gridFlex" />
+            <Route element={<GridFlex/>} exact path="/grid" />
           </Routes>
         </div>
       </Router>
