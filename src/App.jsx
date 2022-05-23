@@ -7,7 +7,7 @@ import Charts from "./Pages/Charts";
 import PokeDex from "./Pages/PokeDex"
 import Forms from "./Pages/Formulario"
 import AnimatedWaves from "./Pages/AnimatedWaves";
-import GridFlex from "./Pages/GridFlex";
+import GridFlex from "./Pages/Grid";
 function App() {
   return (
     <div className="App">
