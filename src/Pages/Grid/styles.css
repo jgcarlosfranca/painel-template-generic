@@ -3,11 +3,12 @@
     grid-template-columns: 3fr 1fr 2fr 2fr;
     grid-template-rows: 20vh 10vh 20vh 5vh;
     width: 100%;
-    max-height: 90vh;
+    max-height: 95vh;
+    background-color: rgb(151, 151, 151);
 }
 
 .color1 {
-    background-color: blue;
+    background-color: rgb(0, 0, 144);
     height: 100%;
     width: 100%;
     grid-column-start: 1;
@@ -21,13 +22,13 @@
 }
 
 .color3 {
-    background-color: red;
+    background-color: rgb(144, 0, 0);
     height: 100%;
     width: 100%;
 }
 
 .color4 {
-    background-color: yellow;
+    background-color: rgb(132, 132, 0);
     height: 100%;
     width: 100%;
     grid-column-start: 2;
@@ -35,19 +36,19 @@
 }
 
 .color5 {
-    background-color: rgb(195, 0, 255);
+    background-color: rgb(117, 0, 153);
     height: 100%;
     width: 100%;
 }
 
 .color6 {
-    background-color: rgb(255, 136, 0);
+    background-color: rgb(131, 70, 0);
     height: 40vh;
     width: 100%;
 }
 
 .color7 {
-    background-color: rgb(0, 255, 229);
+    background-color: rgb(0, 143, 129);
     height: 100%;
     width: 100%;
 }
