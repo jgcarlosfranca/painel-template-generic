@@ -86,12 +86,17 @@
 
 .image-fixing-temporary {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     width: 70%;
     height: 150px;
     align-content: center;
     align-items: center;
     justify-content: space-around;
+}
+
+.image-fixing-temporary img {
+    flex: 1 1 100px;
 }
 
 
